@@ -1,0 +1,24 @@
+{
+  "name": "node_fazilet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fileStream.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaziletKosure/node_js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FaziletKosure/node_js/issues"
+  },
+  "homepage": "https://github.com/FaziletKosure/node_js#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "nodemon": "^2.0.6"
+  }
+}
