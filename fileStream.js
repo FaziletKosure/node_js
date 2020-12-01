@@ -15,3 +15,11 @@ fs.writeFile('dosya2.txt',"Fazilet Kosure",function (error) {
     } 
     console.log("yazildi"); //.toString() 
    })
+
+   //appendFile
+   fs.appendFile('dosya2.txt',"Serra Kosure",function (error) {
+    if(error){
+        throw error;
+    } 
+    console.log("eklendii"); //.toString() 
+   })
