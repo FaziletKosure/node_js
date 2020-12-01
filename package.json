@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/FaziletKosure/node_js#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.5.3",
+    "express": "^4.17.1",
     "nodemon": "^2.0.6"
   }
 }
