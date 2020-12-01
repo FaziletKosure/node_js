@@ -23,3 +23,11 @@ fs.writeFile('dosya2.txt',"Fazilet Kosure",function (error) {
     } 
     console.log("eklendii"); //.toString() 
    })
+
+    //unlink bir dosyayi silmek icin
+    fs.unlink('dosya2.txt',function (error) {
+        if(error){
+            throw error;
+        } 
+        console.log("dosya2 silindi"); //.toString() 
+       })
