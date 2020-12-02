@@ -1,20 +1,26 @@
 const express = require('express');
-const path = require('path');
 const app = express();
+const path = require('path');
+const logger = require('./middleware/logger')
 
 
 
+// Init middeleware
+app.use(logger);
 
-//Gets all Members
-  app.get('/api/members',(req,res)=>res.json(members));
-
-
+// Body Parser Middleware
+app.use(express.json())
+app.use(express.urlencoded({extended: false}));
 
 //******************************************************** */
 // Set static folder (bizim biradaki static folderimiz public)
 // app.use() // method that we use when we want to include middleware
 
 app.use(express.static(path.join(__dirname,'public')));
+
+
+// Members API Routes
+app.use('/api/members',require('./routers/api/members'))
 
 //********************************************* */
 
